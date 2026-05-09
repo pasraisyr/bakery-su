@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { SiFacebook } from 'react-icons/si';
 
 const LandingPage = () => {
   return (
@@ -15,25 +16,19 @@ const LandingPage = () => {
 
       <section id="about" className="section-padding" style={{ background: 'rgba(255, 255, 255, 0.7)', backdropFilter: 'blur(10px)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', alignItems: 'center' }}>
-            <div style={{ position: 'relative' }}>
+          <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', alignItems: 'center' }}>
+            <div className="profile-image-container" style={{ position: 'relative' }}>
               <img 
                 src="/sticker.jpeg" 
                 alt="Suhailawati Subri - Wild Flour Bakery" 
                 style={{ borderRadius: '32px', width: '100%', height: 'auto', boxShadow: '0 20px 60px rgba(0,0,0,0.1)', background: 'white' }}
               />
-              <div style={{ 
-                position: 'absolute', 
-                bottom: '-30px', 
-                right: '20px', 
-                background: 'var(--primary)', 
-                color: 'white', 
-                padding: '1.5rem 2rem', 
-                borderRadius: '24px',
-                boxShadow: '0 15px 30px rgba(212, 163, 115, 0.3)'
-              }}>
-                <div style={{ fontSize: '1.5rem', fontWeight: '800' }}>5.1K</div>
-                <div style={{ fontSize: '0.8rem', opacity: 0.9 }}>Facebook Followers</div>
+              <div className="followers-badge">
+                <SiFacebook size={24} />
+                <div className="badge-text">
+                  <strong>5.1K</strong>
+                  <span>Followers</span>
+                </div>
               </div>
             </div>
             <div>
