@@ -2,6 +2,11 @@ import { useEffect } from 'react';
 import { useCart } from '../context/CartContext';
 import { BiPlus, BiMinus, BiTrash, BiXCircle } from 'react-icons/bi';
 
+const getImageUrl = (imagePath: string) => {
+  const filename = imagePath.split('/').pop();
+  return new URL(`../assets/product/${filename}`, import.meta.url).href;
+};
+
 const CartModal = () => {
   const { cart, removeFromCart, updateQuantity, totalPrice, totalItems, clearCart, isCartOpen, setIsCartOpen } = useCart();
 
@@ -55,7 +60,7 @@ const CartModal = () => {
             <div className="cart-items">
               {cart.map(item => (
                 <div key={item.id} className="cart-item">
-                  <img src={item.image} alt={item.name} />
+                  <img src={getImageUrl(item.image)} alt={item.name} />
                   <div className="item-details">
                     <h4>{item.name}</h4>
                     <p>RM{item.price.toFixed(2)}</p>

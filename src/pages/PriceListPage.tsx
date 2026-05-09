@@ -3,6 +3,11 @@ import products from '../data/products.json';
 import { useCart } from '../context/CartContext';
 import { BiPlus, BiMinus } from 'react-icons/bi';
 
+const getImageUrl = (imagePath: string) => {
+  const filename = imagePath.split('/').pop();
+  return new URL(`../assets/product/${filename}`, import.meta.url).href;
+};
+
 const ProductCard = ({ product }: { product: any }) => {
   const { cart, addToCart, updateQuantity } = useCart();
   
@@ -27,7 +32,7 @@ const ProductCard = ({ product }: { product: any }) => {
   return (
     <div className="product-card">
       <div className="product-image">
-        <img src={product.image} alt={product.name} onError={(e) => {
+        <img src={getImageUrl(product.image)} alt={product.name} onError={(e) => {
           (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800';
         }} />
       </div>
@@ -35,7 +40,7 @@ const ProductCard = ({ product }: { product: any }) => {
         <div className="product-category">{product.category}</div>
         <h3 className="product-name">{product.name}</h3>
         
-        <div className="product-footer-top" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '1rem' }}>
+        <div className="product-footer-top">
           <div className="product-price">
             <span>RM</span>{product.price.toFixed(2)}
           </div>
@@ -91,13 +96,7 @@ const PriceListPage = () => {
           <p>Handcrafted sourdough delights made fresh daily.</p>
         </div>
 
-        <div className="category-filter" style={{ 
-          display: 'flex', 
-          justifyContent: 'center', 
-          gap: '1rem', 
-          marginBottom: '4rem',
-          flexWrap: 'wrap'
-        }}>
+        <div className="category-filter">
           {categories.map(cat => (
             <button
               key={cat}

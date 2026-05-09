@@ -1,10 +1,14 @@
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { BiStore, BiCartAlt } from 'react-icons/bi';
+import { BiStore, BiCartAlt, BiMenu, BiX } from 'react-icons/bi';
 import { useCart } from '../context/CartContext';
 
 const Header = () => {
   const location = useLocation();
   const { totalItems } = useCart();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const closeMenu = () => setIsMobileMenuOpen(false);
 
   return (
     <header>
@@ -14,11 +18,16 @@ const Header = () => {
             <BiStore size={32} color="var(--primary)" style={{ marginRight: '10px' }} />
             Ciksu sourdough bakery
           </Link>
-          <ul className="nav-links">
+          <button className="mobile-menu-btn" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            {isMobileMenuOpen ? <BiX size={32} /> : <BiMenu size={32} />}
+          </button>
+          
+          <ul className={`nav-links ${isMobileMenuOpen ? 'mobile-active' : ''}`}>
             <li>
               <Link 
                 to="/" 
                 className={location.pathname === '/' ? 'active' : ''}
+                onClick={closeMenu}
               >
                 Home
               </Link>
@@ -27,12 +36,13 @@ const Header = () => {
               <Link 
                 to="/pricelist" 
                 className={location.pathname === '/pricelist' ? 'active' : ''}
+                onClick={closeMenu}
               >
                 Price List
               </Link>
             </li>
             <li className="cart-container">
-              <button className="cart-btn" onClick={() => window.dispatchEvent(new CustomEvent('open-cart'))} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'var(--primary)', color: 'white', padding: '8px 16px', borderRadius: '50px' }}>
+              <button className="cart-btn" onClick={() => { window.dispatchEvent(new CustomEvent('open-cart')); closeMenu(); }} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'var(--primary)', color: 'white', padding: '8px 16px', borderRadius: '50px' }}>
                 <BiCartAlt size={22} />
                 <span style={{ fontWeight: '600' }}>Cart</span>
                 {totalItems > 0 && <span className="cart-badge-header" style={{ background: 'white', color: 'var(--primary)', padding: '2px 8px', borderRadius: '10px', fontSize: '0.8rem', fontWeight: '800' }}>{totalItems}</span>}

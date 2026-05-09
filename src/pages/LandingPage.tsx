@@ -13,12 +13,12 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section id="about" style={{ padding: '8rem 0', background: 'rgba(255, 255, 255, 0.7)', backdropFilter: 'blur(10px)' }}>
+      <section id="about" className="section-padding" style={{ background: 'rgba(255, 255, 255, 0.7)', backdropFilter: 'blur(10px)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', alignItems: 'center' }}>
             <div style={{ position: 'relative' }}>
               <img 
-                src="/sticker.png" 
+                src="/sticker.jpeg" 
                 alt="Suhailawati Subri - Wild Flour Bakery" 
                 style={{ borderRadius: '32px', width: '100%', height: 'auto', boxShadow: '0 20px 60px rgba(0,0,0,0.1)', background: 'white' }}
               />
