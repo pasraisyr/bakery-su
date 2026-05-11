@@ -100,11 +100,13 @@ header {
 }
 
 .nav-links a {
-  font-weight: 500;
-  font-size: 1rem;
-  color: var(--light);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--primary);
   position: relative;
+  transition: var(--transition);
 }
+
 
 nav {
   display: flex;
@@ -126,16 +128,9 @@ nav {
   gap: 2rem;
 }
 
-.nav-links a {
-  font-weight: 500;
-  font-size: 1rem;
-  color: var(--dark);
-  position: relative;
-}
+/* .nav-links a already defined above */
 
-.nav-links a.active {
-  color: var(--primary);
-}
+/* .active link indicated by underline */
 
 .nav-links a::after {
   content: '';

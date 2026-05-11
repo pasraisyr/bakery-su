@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import products from '../data/products.json';
 import { useCart } from '../context/CartContext';
-import { BiPlus, BiMinus } from 'react-icons/bi';
+import { BiPlus, BiMinus, BiStore } from 'react-icons/bi';
 
 const getImageUrl = (imagePath: string) => {
   const filename = imagePath.split('/').pop();
@@ -29,12 +29,23 @@ const ProductCard = ({ product }: { product: any }) => {
     }
   };
 
+  const [imageError, setImageError] = useState(false);
+
   return (
     <div className="product-card">
-      <div className="product-image">
-        <img src={getImageUrl(product.image)} alt={product.name} onError={(e) => {
-          (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800';
-        }} />
+      <div className="product-image" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f5f5f5', color: '#999' }}>
+        {product.image && !imageError ? (
+          <img 
+            src={getImageUrl(product.image)} 
+            alt={product.name} 
+            onError={() => setImageError(true)} 
+          />
+        ) : (
+          <div style={{ textAlign: 'center', opacity: 0.6 }}>
+            <BiStore size={48} color="var(--primary)" />
+            <div style={{ fontSize: '0.8rem', marginTop: '0.8rem', fontWeight: '700', color: 'var(--primary)', letterSpacing: '1px', textTransform: 'uppercase' }}>No Photo</div>
+          </div>
+        )}
       </div>
       <div className="product-info">
         <div className="product-category">{product.category}</div>

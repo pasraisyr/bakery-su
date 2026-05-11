@@ -1,55 +1,55 @@
 [
   {
     "id": 1,
-    "name": "Plain Loaf",
+    "name": "Sourdough Plain Loaf",
     "description": "Our signature sourdough plain loaf, fermented for 24 hours.",
     "price": 15.00,
-    "category": "Loafx",
+    "category": "Loaf",
     "image": "/product/Sourdough_plain_loaf.jpeg"
   },
   {
     "id": 2,
-    "name": "Choco Loaf",
+    "name": "Sourdough Choco Loaf",
     "description": "Rich chocolate swirled into our soft sourdough loaf.",
     "price": 16.00,
-    "category": "Loafx",
-    "image": "/product/Sourdough_plain_loaf.jpeg"
+    "category": "Loaf",
+    "image": ""
   },
   {
     "id": 3,
-    "name": "Wholemeal Loaf",
+    "name": "Sourdough Wholemeal Loaf",
     "description": "Healthy and hearty wholemeal sourdough loaf.",
     "price": 19.00,
-    "category": "Loafx",
+    "category": "Loaf",
     "image": "/product/Sourdough_wholemeal_loaf.jpeg"
   },
   {
     "id": 4,
-    "name": "Double Chocolate Babka",
+    "name": "Sourdough Double Chocolate Babka",
     "description": "Luxurious double chocolate swirls in every bite.",
     "price": 25.00,
-    "category": "Loafx",
+    "category": "Loaf",
     "image": "/product/Sourdough_double_choc_babka.jpeg"
   },
   {
     "id": 5,
-    "name": "Spelt Loaf",
+    "name": "Sourdough Spelt Loaf",
     "description": "Ancient grain spelt loaf with a unique nutty flavor.",
     "price": 21.00,
-    "category": "Loafx",
+    "category": "Loaf",
     "image": "/product/Sourdough_spelt_loaf.jpeg"
   },
   {
     "id": 6,
-    "name": "Triple Chocolate Babka",
+    "name": "Sourdough Triple Chocolate Babka",
     "description": "The ultimate chocolate indulgence for chocolate lovers.",
     "price": 32.00,
-    "category": "Loafx",
+    "category": "Loaf",
     "image": "/product/Sourdough_triple_chocolate_babka.jpeg"
   },
   {
     "id": 7,
-    "name": "Burger Bun (4pcs)",
+    "name": "Sourdough Burger Bun (4pcs)",
     "description": "Soft and sturdy sourdough burger buns.",
     "price": 15.00,
     "category": "Bun",
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "name": "Sosej Bun (4pcs)",
+    "name": "Sourdough Sosej Bun (4pcs)",
     "description": "Classic sausage buns, perfect for kids and adults alike.",
     "price": 12.00,
     "category": "Bun",
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "name": "Double Choc Bun",
+    "name": "Sourdough Double Choc Bun",
     "description": "Individual buns packed with double chocolate goodness.",
     "price": 21.00,
     "category": "Bun",
@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "name": "Bun Manis (9pcs)",
+    "name": "Sourdough Sweet Bun (9pcs)",
     "description": "Soft and sweet traditional buns.",
     "price": 14.00,
     "category": "Bun",
@@ -81,7 +81,7 @@
   },
   {
     "id": 11,
-    "name": "Bun Sweet Cheese (9pcs)",
+    "name": "Sourdough Bun Sweet Cheese (9pcs)",
     "description": "Sweet buns topped with creamy cheese.",
     "price": 17.00,
     "category": "Bun",
@@ -89,7 +89,7 @@
   },
   {
     "id": 12,
-    "name": "Red Bean Bun (9pcs)",
+    "name": "Sourdough Red Bean Bun (9pcs)",
     "description": "Filled with premium red bean paste.",
     "price": 21.00,
     "category": "Bun",
@@ -97,87 +97,151 @@
   },
   {
     "id": 13,
-    "name": "Bun Sekaya (9pcs)",
+    "name": "Sourdough Bun Sekaya (9pcs)",
     "description": "Traditional kaya filled buns.",
     "price": 19.00,
     "category": "Bun",
-    "image": "/product/Sourdough_sweet_bun.jpeg"
+    "image": ""
   },
   {
     "id": 14,
-    "name": "Bun Kelapa (9pcs)",
+    "name": "Sourdough Bun Kelapa (9pcs)",
     "description": "Grated coconut filled buns.",
     "price": 19.00,
     "category": "Bun",
-    "image": "/product/Sourdough_sweet_bun.jpeg"
+    "image": ""
   },
   {
     "id": 15,
-    "name": "Butter Sugar Toast",
-    "description": "Crispy toast with butter and sugar (200g/500g/1kg).",
-    "price": 20.00,
-    "category": "Toast Edition",
-    "image": "/product/Sourdough_butter_sugar_toast_(orcs).jpeg"
-  },
-  {
-    "id": 16,
-    "name": "Butter Toast",
-    "description": "Classic buttery crispy toast (200g/500g/1kg).",
-    "price": 18.00,
-    "category": "Toast Edition",
-    "image": "/product/Sourdough_butter_toast.jpeg"
-  },
-  {
-    "id": 17,
-    "name": "Choc Cereal",
-    "description": "Homemade chocolate sourdough cereal (0.5kg/1kg).",
-    "price": 40.00,
-    "category": "Cereal",
-    "image": "/product/Sourdough_choc_cereal.jpeg"
-  },
-  {
-    "id": 18,
-    "name": "Blueberry Cheese Bun (3pcs)",
+    "name": "Sourdough Blueberry Cheese Bun (3pcs)",
     "description": "Creamy cheese and tangy blueberry filling.",
     "price": 24.00,
     "category": "Bun",
     "image": "/product/Sourdough_blueberry_cheese_bun.jpeg"
   },
   {
-    "id": 19,
-    "name": "Garlic Cheese (3pcs)",
+    "id": 16,
+    "name": "Sourdough Garlic Cheese (3pcs)",
     "description": "Savory garlic and cheese sourdough buns.",
     "price": 24.00,
     "category": "Bun",
     "image": "/product/Sourdough_garlic_cheese.jpeg"
   },
   {
+    "id": 17,
+    "name": "Sourdough Butter Sugar Toast (200g)",
+    "description": "Crispy toast with butter and sugar.",
+    "price": 20.00,
+    "category": "Toast Edition",
+    "image": "/product/Sourdough_butter_sugar_toast_(orcs).jpeg"
+  },
+  {
+    "id": 18,
+    "name": "Sourdough Butter Sugar Toast (500g)",
+    "description": "Crispy toast with butter and sugar.",
+    "price": 40.00,
+    "category": "Toast Edition",
+    "image": "/product/Sourdough_butter_sugar_toast_(orcs).jpeg"
+  },
+  {
+    "id": 19,
+    "name": "Sourdough Butter Sugar Toast (1kg)",
+    "description": "Crispy toast with butter and sugar.",
+    "price": 78.00,
+    "category": "Toast Edition",
+    "image": "/product/Sourdough_butter_sugar_toast_(orcs).jpeg"
+  },
+  {
     "id": 20,
-    "name": "Scones (5pcs)",
+    "name": "Sourdough Butter Toast (200g)",
+    "description": "Classic buttery crispy toast.",
+    "price": 18.00,
+    "category": "Toast Edition",
+    "image": "/product/Sourdough_butter_toast.jpeg"
+  },
+  {
+    "id": 21,
+    "name": "Sourdough Butter Toast (500g)",
+    "description": "Classic buttery crispy toast.",
+    "price": 36.00,
+    "category": "Toast Edition",
+    "image": "/product/Sourdough_butter_toast.jpeg"
+  },
+  {
+    "id": 22,
+    "name": "Sourdough Butter Toast (1kg)",
+    "description": "Classic buttery crispy toast.",
+    "price": 70.00,
+    "category": "Toast Edition",
+    "image": "/product/Sourdough_butter_toast.jpeg"
+  },
+  {
+    "id": 23,
+    "name": "Sourdough Coconut Sugar Butter Toast (200g)",
+    "description": "Crispy toast with coconut sugar and butter.",
+    "price": 23.00,
+    "category": "Toast Edition",
+    "image": "/product/Sourdough_coconut_sugar_toast.jpeg"
+  },
+  {
+    "id": 24,
+    "name": "Sourdough Coconut Sugar Butter Toast (500g)",
+    "description": "Crispy toast with coconut sugar and butter.",
+    "price": 44.00,
+    "category": "Toast Edition",
+    "image": "/product/Sourdough_coconut_sugar_toast.jpeg"
+  },
+  {
+    "id": 25,
+    "name": "Sourdough Coconut Sugar Butter Toast (1kg)",
+    "description": "Crispy toast with coconut sugar and butter.",
+    "price": 83.00,
+    "category": "Toast Edition",
+    "image": "/product/Sourdough_coconut_sugar_toast.jpeg"
+  },
+  {
+    "id": 26,
+    "name": "Sourdough Choc Cereal (0.5kg)",
+    "description": "Homemade chocolate sourdough cereal.",
+    "price": 40.00,
+    "category": "Cereal",
+    "image": "/product/Sourdough_choc_cereal.jpeg"
+  },
+  {
+    "id": 27,
+    "name": "Sourdough Choc Cereal (1kg)",
+    "description": "Homemade chocolate sourdough cereal.",
+    "price": 74.00,
+    "category": "Cereal",
+    "image": "/product/Sourdough_choc_cereal.jpeg"
+  },
+  {
+    "id": 28,
+    "name": "Sourdough Scones (5pcs)",
     "description": "Classic buttery scones, perfect with tea.",
     "price": 24.00,
     "category": "Others",
     "image": "/product/Sourdough_scone.jpeg"
   },
   {
-    "id": 21,
-    "name": "Plain Bagel (4pcs)",
+    "id": 29,
+    "name": "Sourdough Plain Bagel (4pcs)",
     "description": "Chewy and authentic sourdough bagels.",
     "price": 32.00,
     "category": "Bagel",
     "image": "/product/Sourdough_plain_bagel.jpeg"
   },
   {
-    "id": 22,
-    "name": "Chili Cheese Bagel (4pcs)",
+    "id": 30,
+    "name": "Sourdough Chili Cheese Bagel (4pcs)",
     "description": "Spicy and cheesy sourdough bagels.",
     "price": 38.00,
     "category": "Bagel",
     "image": "/product/Sourdough_chili_cheese_bagel.jpeg"
   },
   {
-    "id": 23,
-    "name": "Butter Oatmeal Bagel (4pcs)",
+    "id": 31,
+    "name": "Sourdough oatmeal porridge (4pcs)",
     "description": "Hearty oatmeal sourdough bagels.",
     "price": 36.00,
     "category": "Bagel",

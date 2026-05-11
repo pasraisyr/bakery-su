@@ -42,8 +42,7 @@ const LandingPage = () => {
               
               <div className="profile-details" style={{ marginBottom: '2.5rem' }}>
                 <p style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '2rem', color: '#444', lineHeight: '1.8' }}>
-                  🥖🍞 SOURDOUGH HOMEBAKER | CERTIFIED REVELL <br />
-                  MYPEN1293204 🍞🥖
+                  🥖🍞 SOURDOUGH HOMEBAKER 🍞🥖
                 </p>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
@@ -57,23 +56,13 @@ const LandingPage = () => {
                     </div>
                   </div>
 
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: '#666' }}>
+                   <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: '#666' }}>
                     <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
-                      <span style={{ fontSize: '1.2rem' }}>🏢</span>
+                      <span style={{ fontSize: '1.2rem' }}>📜</span>
                     </div>
                     <div>
-                      <div style={{ fontSize: '0.85rem', color: '#999' }}>Work</div>
-                      <div style={{ fontWeight: '700' }}>Wild Flour Bakery</div>
-                    </div>
-                  </div>
-
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: '#666' }}>
-                    <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
-                      <span style={{ fontSize: '1.2rem' }}>✅</span>
-                    </div>
-                    <div>
-                      <div style={{ fontSize: '0.85rem', color: '#999' }}>Certified</div>
-                      <div style={{ fontWeight: '700' }}>REVELL MYPEN1293204</div>
+                      <div style={{ fontSize: '0.85rem', color: '#999' }}>No. Pendaftaran SSM</div>
+                      <div style={{ fontWeight: '700' }}>003827649-A</div>
                     </div>
                   </div>
                 </div>
